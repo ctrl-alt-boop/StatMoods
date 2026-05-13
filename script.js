@@ -9,3 +9,15 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+function onInit() {
+    let greetingElement = document.getElementById("greeting")
+    greetingElement.innerText = resources.strings.greeting
+}
+
+function onClick() {
+    let greetingElement = document.getElementById("greeting")
+    greetingElement.innerText = resources.strings.thanks
+}
+
+onInit()
